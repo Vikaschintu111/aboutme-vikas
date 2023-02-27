@@ -1,0 +1,44 @@
+.Home {
+  // background: #151718;
+  color: #ffff;
+  background-image: url(/public/images/background.png);
+  .MainCntr {
+    padding: 150px 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .Text {
+      letter-spacing: 0.04em;
+      display: flex;
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+      padding-top: 50px;
+      .Name {
+        padding-bottom: 15px;
+        font-size: 22px;
+        font-weight: 800;
+        letter-spacing: 0.04em;
+        display: flex;
+        flex-direction: column;
+      }
+      .Head {
+        padding-bottom: 35px;
+        font-size: 30px;
+        font-weight: 800;
+      }
+      .Desc {
+        padding-bottom: 60px;
+        font-size: 22px;
+        font-weight: 700;
+      }
+    }
+    .Profile {
+      width: 100%;
+      max-width: 350px;
+      height: 350px;
+      border-radius: 70%;
+      border: 1px solid rgb(255, 0.25, 250);
+    }
+  }
+}
