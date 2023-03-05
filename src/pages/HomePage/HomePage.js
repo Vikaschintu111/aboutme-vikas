@@ -5,6 +5,8 @@ import Projects from "../Projects/Projects";
 import styles from "./HomePage.module.scss";
 import Image from "next/image";
 import Button from "@import/src/Components/Button/Button";
+import Resume from "../Resume/Resume";
+import About from "../About/About";
 
 const HomePage = ({ text }) => {
   return (
@@ -23,21 +25,23 @@ const HomePage = ({ text }) => {
                 paddingTop: "20px",
               }}
             >
-              😊 Vikas reddy😊
+              😊 VIKAS REDDY😊
             </span>{" "}
           </h2>
           <h3 className={styles.Head}>💻 Front End / UI Developer 📱</h3>
           <h3 className={styles.Desc}>
             knack of building applications with
             <span style={{ color: "red", paddingLeft: "10px" }}>
-              front end operations.
+              FRONT END OPERATIONS..
             </span>
           </h3>
           <Button text="Contact" />
         </div>
-        <img className={styles.Profile} src="/images/hd.jpg" alt="" />
+        <img className={styles.Profile} src="/images/profile.jpg" alt="" />
       </div>
       <Projects />
+      <Resume />
+      <About />
     </div>
   );
 };

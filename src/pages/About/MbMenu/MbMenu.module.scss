@@ -1,0 +1,29 @@
+.MbCntr {
+  @media screen and (max-width: 768px) {
+    z-index: 105;
+    position: fixed;
+    top: 76px;
+    right: 0;
+    width: 224px;
+    color: #151718;
+    background: #ffff;
+    display: flex;
+    flex-direction: column;
+    .TitleWrap {
+      margin: 20px 24px;
+      .Title {
+        cursor: pointer;
+        padding: 21px 0;
+        font-weight: 600;
+        font-size: 14px;
+        letter-spacing: 0.04em;
+        margin: 0;
+        text-decoration: none;
+        border-bottom: 0.5px solid #000000;
+        &:nth-child(6) {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}
