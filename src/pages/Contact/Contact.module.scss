@@ -1,6 +1,6 @@
 .Contact {
   background: #ffffff;
-  padding: 90px 300px;
+  padding: 120px 300px;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: linear-gradient(
@@ -11,7 +11,7 @@
     ),
     url(/public/images/back.jpg);
   @media screen and (max-width: 768px) {
-    padding: 50px 80px;
+    padding: 70px 80px;
   }
   .Header {
     // color: rgb(193, 159, 21);
