@@ -7,7 +7,6 @@ const Resume = () => {
   return (
     <div className={styles.Resume}>
       <h1 className={styles.HeadCntr}>
-        {" "}
         <Typewriter
           options={{
             strings: ["Resume & Cover Letter"],
@@ -19,7 +18,7 @@ const Resume = () => {
       <div className={styles.Cntr}>
         <div className={styles.Cover}>
           <h1>COVER LETTER</h1>
-          <h1>Resume</h1>
+          <h1 className={styles.Resu}>Resume</h1>
         </div>
 
         <div className={styles.Wrap}>
@@ -41,10 +40,12 @@ const Resume = () => {
             bring value to your team. Thank you for considering my application.
             I look forward to discussing my qualifications in further detail.
           </p>
-
           <div className={styles.ResCntr}>
+            <h1 className={styles.Mbresu}>Resume</h1>
             <img className={styles.ImgCntr} src="/images/res.png" />
-            <Button text="Download" />
+            <div className={styles.Btn}>
+              <Button text="Download" />
+            </div>
           </div>
         </div>
       </div>

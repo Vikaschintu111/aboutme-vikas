@@ -7,6 +7,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media screen and (max-width: 768px) {
+      padding: 70px 80px;
+      display: flex;
+      justify-content: center;
+    }
     .Text {
       letter-spacing: 0.04em;
       display: flex;
@@ -14,6 +19,9 @@
       display: flex;
       align-items: center;
       padding-top: 50px;
+      @media screen and (max-width: 768px) {
+        padding: 0;
+      }
       .Name {
         padding-bottom: 15px;
         font-size: 22px;
@@ -21,17 +29,50 @@
         letter-spacing: 0.04em;
         display: flex;
         flex-direction: column;
+        @media screen and (max-width: 768px) {
+          font-size: 16px;
+        }
+      }
+      .MbProfile {
+        display: none;
+        @media screen and (max-width: 768px) {
+          display: block;
+          width: 100%;
+          max-width: 150px;
+          height: 150px;
+          border-radius: 10%;
+          background: #ffff;
+          border: 1px solid rgba(255, 0, 251, 0.399);
+          margin-bottom: 20px;
+        }
       }
       .Head {
         padding-bottom: 35px;
         font-size: 25px;
         font-weight: 800;
         color: GOLD;
+        @media screen and (max-width: 768px) {
+          font-size: 16px;
+        }
       }
       .Desc {
         padding-bottom: 60px;
         font-size: 22px;
         font-weight: 700;
+        @media screen and (max-width: 768px) {
+          font-size: 16px;
+          display: contents;
+          // align-items: center;
+          justify-content: center;
+        }
+        .Oper {
+          color: red;
+          padding-left: 15px;
+          @media screen and (max-width: 768px) {
+            font-size: 16px;
+            padding-bottom: 50px;
+          }
+        }
       }
     }
     .Profile {
@@ -41,6 +82,9 @@
       border-radius: 10%;
       background: #ffff;
       border: 1px solid rgba(255, 0, 251, 0.399);
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
     }
   }
 }

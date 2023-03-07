@@ -7,7 +7,6 @@ const Projects = () => {
     <div className={styles.Projects}>
       <div className={styles.Container}>
         <h1 className={styles.Head}>
-          {" "}
           <Typewriter
             options={{
               strings: ["Projects"],

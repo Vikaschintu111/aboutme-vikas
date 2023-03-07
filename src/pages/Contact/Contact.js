@@ -10,7 +10,7 @@ import Typewriter from "typewriter-effect";
 const Contact = () => {
   return (
     <div className={styles.Contact}>
-      <h1 className={styles.Header}>CONTACT</h1>
+      <h1 className={styles.Header}>CONTACT INFORMATION</h1>
       <div className={styles.ContactWrap}>
         <div className={styles.Container}>
           <a
@@ -19,7 +19,6 @@ const Contact = () => {
           >
             <GrMail style={{ color: "red" }} size={40} />
             <h2 className={styles.Social}>
-              {" "}
               <Typewriter
                 options={{
                   strings: ["Mail"],
@@ -32,7 +31,6 @@ const Contact = () => {
           <a className={styles.Images} href="https://github.com/Vikaschintu111">
             <BsGithub style={{ color: "black" }} size={40} />
             <h2 className={styles.Social}>
-              {" "}
               <Typewriter
                 options={{
                   strings: ["Git"],
@@ -48,7 +46,6 @@ const Contact = () => {
           >
             <BsLinkedin style={{ color: "blue" }} size={40} />
             <h2 className={styles.Social}>
-              {" "}
               <Typewriter
                 options={{
                   strings: ["Linkdin"],
@@ -64,7 +61,6 @@ const Contact = () => {
           >
             <BsInstagram style={{ color: "red" }} size={40} />
             <h2 className={styles.Social}>
-              {" "}
               <Typewriter
                 options={{
                   strings: ["Instagram"],
@@ -78,7 +74,6 @@ const Contact = () => {
           <a className={styles.Images} href="tel:9573313869">
             <BsTelephoneOutbound style={{ color: "green" }} size={40} />
             <h2 className={styles.Social}>
-              {" "}
               <Typewriter
                 options={{
                   strings: ["Phone"],
@@ -98,6 +93,7 @@ const Contact = () => {
               placeholder="...@gmail.com"
               required
             />
+            <input type="phone" name="name" placeholder="+91..." required />
             <select className={styles.Selector} name="Continent" required>
               <option>none</option>
               <option>Telangana</option>

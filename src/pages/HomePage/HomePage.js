@@ -36,6 +36,7 @@ const HomePage = ({ text }) => {
               />
             </span>
           </h2>
+          <img className={styles.MbProfile} src="/images/profile.jpg" alt="" />
           <h3 className={styles.Head}>
             <Typewriter
               options={{
@@ -47,9 +48,7 @@ const HomePage = ({ text }) => {
           </h3>
           <h3 className={styles.Desc}>
             knack of building applications with
-            <span style={{ color: "red", paddingLeft: "10px" }}>
-              FRONT END OPERATIONS..
-            </span>
+            <span className={styles.Oper}>FRONT END OPERATIONS..</span>
           </h3>
           <Button text="Contact" />
         </div>
