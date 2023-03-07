@@ -11,7 +11,7 @@
     ),
     url(/public/images/back.jpg);
   @media screen and (max-width: 768px) {
-    padding: 70px 80px;
+    padding: 70px 30px;
   }
   .Header {
     // color: rgb(193, 159, 21);
@@ -65,7 +65,7 @@
         color: #151718;
       }
       .Selector {
-        width: 100%;
+        width: 80%;
         height: 40px;
         background: #ffffff;
         border: 0;
@@ -85,11 +85,12 @@
       .Btn {
         margin-top: 15px;
         background: #151718;
+        color: #ffff;
         max-width: 80px;
         width: 100%;
         cursor: pointer;
         border: 0;
-        height: 25px;
+        height: 30px;
       }
     }
   }

@@ -3,7 +3,7 @@
   color: #151718;
   padding: 70px 200px;
   @media screen and (max-width: 768px) {
-    padding: 70px 80px;
+    padding: 70px 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,6 +14,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      color: #ffff;
       margin: 0;
       font-weight: 800;
       font-size: 40px;
@@ -34,7 +35,9 @@
     color: #ffff;
     border: 1px solid rgb(30, 255, 0);
     margin-bottom: 50px;
-
+    @media screen and (max-width: 768px) {
+      margin: auto;
+    }
     .Wrap {
       display: flex;
       flex-direction: column;

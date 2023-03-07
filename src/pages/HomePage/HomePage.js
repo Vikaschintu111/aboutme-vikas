@@ -14,50 +14,56 @@ const HomePage = ({ text }) => {
   return (
     <div className={styles.Home}>
       <Header />
-      <div className={styles.MainCntr}>
-        <div className={styles.Text}>
-          <h2 className={styles.Name}>
-            📱HELLO, I`M 👇
-            <span
-              style={{
-                color: "red",
-                paddingLeft: "10px",
-                display: "flex",
-                justifyContent: "end",
-                paddingTop: "20px",
-              }}
-            >
+      <Container>
+        <div className={styles.MainCntr}>
+          <div className={styles.Text}>
+            <h2 className={styles.Name}>
+              📱HELLO, I`M 👇
+              <span
+                style={{
+                  color: "red",
+                  paddingLeft: "10px",
+                  display: "flex",
+                  justifyContent: "end",
+                  paddingTop: "20px",
+                }}
+              >
+                <Typewriter
+                  options={{
+                    strings: ["VIKAS REDDY"],
+                    autoStart: true,
+                    loop: Infinity,
+                  }}
+                />
+              </span>
+            </h2>
+            <img
+              className={styles.MbProfile}
+              src="/images/profile.jpg"
+              alt=""
+            />
+            <h3 className={styles.Head}>
               <Typewriter
                 options={{
-                  strings: ["VIKAS REDDY"],
+                  strings: ["FRONT END 📱DEVELOPER💻"],
                   autoStart: true,
-                  loop: Infinity,
+                  loop: true,
                 }}
               />
-            </span>
-          </h2>
-          <img className={styles.MbProfile} src="/images/profile.jpg" alt="" />
-          <h3 className={styles.Head}>
-            <Typewriter
-              options={{
-                strings: ["FRONT END 📱DEVELOPER💻"],
-                autoStart: true,
-                loop: true,
-              }}
-            />
-          </h3>
-          <h3 className={styles.Desc}>
-            knack of building applications with
-            <span className={styles.Oper}>FRONT END OPERATIONS..</span>
-          </h3>
-          <Button text="Contact" />
+            </h3>
+            <h3 className={styles.Desc}>
+              knack of building applications with
+              <span className={styles.Oper}>FRONT END OPERATIONS..</span>
+            </h3>
+            <button className={styles.Btn}>Contact</button>
+          </div>
+          <img className={styles.Profile} src="/images/profile.jpg" alt="" />
         </div>
-        <img className={styles.Profile} src="/images/profile.jpg" alt="" />
-      </div>
-      <Projects />
-      <Resume />
-      <About />
-      <Contact />
+        <Projects />
+        <Resume />
+        <About />
+        <Contact />
+      </Container>
     </div>
   );
 };
