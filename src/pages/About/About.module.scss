@@ -1,10 +1,53 @@
 .About {
-  background: #c599bb83;
+  background: #09b9dc4a;
   // color: #151718;
-  padding: 80px 160px;
-  .Container {
+  padding: 70px 200px;
+  // display: flex;
+  // // align-items: center;
+  // flex-direction: column;
+  .Header {
+    padding-bottom: 60px;
+    font-weight: 700;
+    font-size: 40px;
+    color: rgb(229, 240, 15);
+    letter-spacing: 0.04em;
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    justify-content: center;
+  }
+  .Container {
+    background: #151718;
+    padding: 30px;
+    border: 0.5px solid rgba(18, 17, 17, 0.264);
+    .Desc {
+      font-size: 15px;
+      font-weight: 500;
+      padding-bottom: 25px;
+      letter-spacing: 0.04em;
+    }
+    .Wrap {
+      display: flex;
+      justify-content: space-evenly;
+      // background: red;
+      padding: 0 80px;
+      // background-color: #00edb0;
+      .ImgCntr {
+        max-width: 400px;
+        width: 100%;
+        padding: 40px 0;
+      }
+      .TitleWrap {
+        .Head {
+          color: rgb(9, 218, 215);
+          padding: 30px 20px 20px 0;
+          letter-spacing: 0.04em;
+        }
+        li {
+          padding-left: 20px;
+          letter-spacing: 0.04em;
+          font-size: 15px;
+          font-weight: 500;
+        }
+      }
+    }
   }
 }

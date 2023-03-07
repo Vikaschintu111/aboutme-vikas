@@ -7,6 +7,8 @@ import Image from "next/image";
 import Button from "@import/src/Components/Button/Button";
 import Resume from "../Resume/Resume";
 import About from "../About/About";
+import Typewriter from "typewriter-effect";
+import Contact from "../Contact/Contact";
 
 const HomePage = ({ text }) => {
   return (
@@ -15,7 +17,7 @@ const HomePage = ({ text }) => {
       <div className={styles.MainCntr}>
         <div className={styles.Text}>
           <h2 className={styles.Name}>
-            Hello, I`M 👇👇👇👇
+            📱HELLO, I`M 👇
             <span
               style={{
                 color: "red",
@@ -25,10 +27,24 @@ const HomePage = ({ text }) => {
                 paddingTop: "20px",
               }}
             >
-              😊 VIKAS REDDY😊
-            </span>{" "}
+              <Typewriter
+                options={{
+                  strings: ["VIKAS REDDY"],
+                  autoStart: true,
+                  loop: Infinity,
+                }}
+              />
+            </span>
           </h2>
-          <h3 className={styles.Head}>💻 Front End / UI Developer 📱</h3>
+          <h3 className={styles.Head}>
+            <Typewriter
+              options={{
+                strings: ["FRONT END 📱DEVELOPER💻"],
+                autoStart: true,
+                loop: true,
+              }}
+            />
+          </h3>
           <h3 className={styles.Desc}>
             knack of building applications with
             <span style={{ color: "red", paddingLeft: "10px" }}>
@@ -42,6 +58,7 @@ const HomePage = ({ text }) => {
       <Projects />
       <Resume />
       <About />
+      <Contact />
     </div>
   );
 };

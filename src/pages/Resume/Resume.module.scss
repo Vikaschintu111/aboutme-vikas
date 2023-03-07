@@ -2,9 +2,6 @@
   color: #ffff;
   background: #151718;
   padding: 70px 200px;
-  //   display: flex;
-  //   flex-direction: column;
-  //   justify-content: center;
   .HeadCntr {
     display: flex;
     align-items: center;
@@ -18,7 +15,7 @@
   }
   .Cntr {
     background: rgba(0, 0, 255, 0.123);
-    border: 1px solid rgba(255, 0, 25, 0.359);
+    border: 0.5px solid rgba(255, 0, 25, 0.359);
     letter-spacing: 0.04em;
     .Cover {
       padding: 60px 50px;

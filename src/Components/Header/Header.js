@@ -4,8 +4,9 @@ import useWindowSize from "../hooks/useWindowSize";
 import styles from "./Header.module.scss";
 import { FiMenu } from "react-icons/fi";
 import Link from "next/link";
-import MbMenu from "@import/src/pages/About/MbMenu/MbMenu";
+
 import { useSpring } from "react-spring";
+import MbMenu from "@import/src/pages/MbMenu/MbMenu";
 
 const Header = () => {
   const [menu, setMenu] = useState(false);

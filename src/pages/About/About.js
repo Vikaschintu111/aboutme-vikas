@@ -1,12 +1,20 @@
 import React from "react";
 import styles from "./About.module.scss";
+import Typewriter from "typewriter-effect";
 
 const About = () => {
   return (
     <div className={styles.About}>
+      <h1 className={styles.Header}>
+        <Typewriter
+          options={{
+            strings: ["ABOUT"],
+            autoStart: true,
+            loop: Infinity,
+          }}
+        />
+      </h1>
       <div className={styles.Container}>
-        <div className={styles.Wrap}></div>
-        <h1 className={styles.Header}>ABOUT</h1>
         <p className={styles.Desc}>
           Hi, I'm VIKAS REDDY, a FRONT - END DEVELOPER with 0.6 years of
           experience creating beautiful and functional websites. I specialize in
@@ -29,6 +37,21 @@ const About = () => {
           get in touch to learn more about my skills and experience or to
           discuss your next project.
         </p>
+        <div className={styles.Wrap}>
+          <img className={styles.ImgCntr} src="/images/dev.png" />
+          <div className={styles.TitleWrap}>
+            <h1 className={styles.Head}>SKILLS</h1>
+            <li>HTML</li>
+            <li>CSS3</li>
+            <li>JAVASCRIPT</li>
+            <li>REACT.JS</li>
+            <li>NEXT.JS</li>
+            <li>TAILWIND</li>
+            <li>BOOTSTARP</li>
+            <li>SASS</li>
+            <li>JAVA</li>
+          </div>
+        </div>
       </div>
     </div>
   );

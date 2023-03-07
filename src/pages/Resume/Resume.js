@@ -1,14 +1,24 @@
 import Button from "@import/src/Components/Button/Button";
 import React from "react";
 import styles from "./Resume.module.scss";
+import Typewriter from "typewriter-effect";
 
 const Resume = () => {
   return (
     <div className={styles.Resume}>
-      <h1 className={styles.HeadCntr}>Resume & Cover Letter</h1>
+      <h1 className={styles.HeadCntr}>
+        {" "}
+        <Typewriter
+          options={{
+            strings: ["Resume & Cover Letter"],
+            autoStart: true,
+            loop: Infinity,
+          }}
+        />
+      </h1>
       <div className={styles.Cntr}>
         <div className={styles.Cover}>
-          <h1> COVER LETTER</h1>
+          <h1>COVER LETTER</h1>
           <h1>Resume</h1>
         </div>
 
