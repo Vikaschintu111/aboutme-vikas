@@ -1,0 +1,12 @@
+import HomePage from "@import/src/pages/HomePage/HomePage";
+import React from "react";
+
+const homePage = () => {
+  return (
+    <div>
+      <HomePage />
+    </div>
+  );
+};
+
+export default homePage;

@@ -1,0 +1,72 @@
+.Projects {
+  background: rgba(240, 248, 255, 0.548);
+  color: #151718;
+  padding: 70px 200px;
+  @media screen and (max-width: 768px) {
+    padding: 70px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .Container {
+    .Head {
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffff;
+      margin: 0;
+      font-weight: 800;
+      font-size: 40px;
+      letter-spacing: 0.04em;
+      padding-bottom: 100px;
+      @media screen and (max-width: 768px) {
+        font-size: 25px;
+      }
+    }
+  }
+  .MainWrap {
+    max-width: 400px;
+    width: 100%;
+    background: #151718;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
+    border: 1px solid rgb(30, 255, 0);
+    margin-bottom: 50px;
+    @media screen and (max-width: 768px) {
+      margin: auto;
+    }
+    .Wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 25px;
+      .ImgCntr {
+        width: 300px;
+        padding-bottom: 10px;
+        @media screen and (max-width: 768px) {
+          max-width: 200px;
+          width: 100%;
+        }
+      }
+    }
+    .Btn {
+      width: 250px;
+      height: 50px;
+      background: red;
+      border: 0;
+      font-size: 18px;
+      font-weight: 600;
+      cursor: pointer;
+      @media screen and (max-width: 768px) {
+        max-width: 250px;
+        width: 100%;
+        font-size: 12px;
+        height: 40px;
+        padding: 10px;
+      }
+    }
+  }
+}
