@@ -47,7 +47,9 @@ const Resume = () => {
               <h1 className={styles.Mbresu}>Resume</h1>
               <img className={styles.ImgCntr} src="/images/res.png" />
 
-              <button className={styles.Btn}>Download</button>
+              <a href="/images/ResumesM.pdf" download="vikas-resume">
+                <button className={styles.Btn}>Download</button>
+              </a>
             </div>
           </div>
         </div>
