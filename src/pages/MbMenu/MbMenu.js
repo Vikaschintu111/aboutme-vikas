@@ -19,7 +19,7 @@ const MbMenu = ({ setMenu, style }) => {
         <Link href="/#projects">
           <h5 className={styles.Title}>PROJECTS</h5>
         </Link>
-        <Link href="/#resume & cover">
+        <Link href="/#resume">
           <h5 className={styles.Title}>RESUME & COVER</h5>
         </Link>
         <Link href="/#about">

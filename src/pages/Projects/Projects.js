@@ -5,7 +5,7 @@ import { Container } from "react-bootstrap";
 
 const Projects = () => {
   return (
-    <div className={styles.Projects}>
+    <div id="projects" className={styles.Projects}>
       <Container>
         <div className={styles.Container}>
           <h1 className={styles.Head}>

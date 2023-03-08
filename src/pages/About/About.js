@@ -5,7 +5,7 @@ import { Container } from "react-bootstrap";
 
 const About = () => {
   return (
-    <div className={styles.About}>
+    <div id="about" className={styles.About}>
       <Container>
         <h1 className={styles.Header}>
           <Typewriter

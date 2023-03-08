@@ -9,6 +9,7 @@ import Resume from "../Resume/Resume";
 import About from "../About/About";
 import Typewriter from "typewriter-effect";
 import Contact from "../Contact/Contact";
+import Link from "next/link";
 
 const HomePage = ({ text }) => {
   return (
@@ -55,7 +56,9 @@ const HomePage = ({ text }) => {
               knack of building applications with
               <span className={styles.Oper}>FRONT END OPERATIONS..</span>
             </h3>
-            <button className={styles.Btn}>Contact</button>
+            <Link href="/#contact">
+              <button className={styles.Btn}>Contact</button>
+            </Link>
           </div>
           <img className={styles.Profile} src="/images/profile.jpg" alt="" />
         </div>

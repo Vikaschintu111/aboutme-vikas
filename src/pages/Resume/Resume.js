@@ -6,7 +6,7 @@ import { Container } from "react-bootstrap";
 
 const Resume = () => {
   return (
-    <div className={styles.Resume}>
+    <div id="resume" className={styles.Resume}>
       <Container>
         <h1 className={styles.HeadCntr}>
           <Typewriter

@@ -10,7 +10,7 @@ import { Container } from "react-bootstrap";
 
 const Contact = () => {
   return (
-    <div className={styles.Contact}>
+    <div id="contact" className={styles.Contact}>
       <Container>
         <h1 className={styles.Header}>CONTACT INFORMATION</h1>
         <div className={styles.ContactWrap}>
